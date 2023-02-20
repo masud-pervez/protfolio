@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.scrollbars::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px !important;
 }

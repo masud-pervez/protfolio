@@ -9,16 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.0",
+    "@coreui/icons-react": "^2.1.0",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
     "@mui/material": "^5.11.9",
     "@next/font": "13.1.6",
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swiper": "^9.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

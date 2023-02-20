@@ -1,22 +1,26 @@
 import React from "react";
 import Profile from "./Profile";
 import Navbar from "./Navbar";
-import Content from "./Content";
+import TopBar from "./TopBar";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-slate-800 min-h-screen">
-      <div className="md:container mx-auto ">
-        <div className="bg-slate-700 py-4 px-2 text-emerald-50">Topbar</div>
-        <div className="row">
-          <div className="col-md-4">
+    <div className="bg-indigo-50 min-h-screen">
+      <TopBar />
+      <div className="md:container mx-auto">
+        <div className="row justify-between">
+          <div className="col-lg-4">
             <Profile />
           </div>
-          <div className="col-md-8">
-            <div className="md:mt-36">
+          <div className="col-lg-8">
+            <div className="lg:mt-36">
               <Navbar />
               <div className="w-full">
-                <Content>{children}</Content>
+                <div className="bg-white shadow-md md:mt-2 mb-20 md:rounded-md">
+                  <div className="px-6 py-4">{children}</div>
+                  <Footer />
+                </div>
               </div>
             </div>
           </div>
